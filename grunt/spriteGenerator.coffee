@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     src: [
       '<%= grunt.appDir %>/images/**/*'
     ]
-    spritePath: '<%= grunt.publicDir %>/images/sprites/sprite.png'
-    stylesheetPath: '<%= grunt.appDir %>/stylesheets/core/sprite.styl'
+    spritePath: '<%= grunt.appDir %>/stylesheets/sprite.png'
+    stylesheetPath: '<%= grunt.appDir %>/stylesheets/sprite.styl'
     layout: 'vertical'
     compositor: 'gm'

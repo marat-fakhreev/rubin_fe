@@ -13,6 +13,7 @@
     "grunt-coffeelint": "~0.0.8",
     "grunt-connect-proxy": "~0.1.7",
     "grunt-notify": "~0.2.18",
+    "grunt-shell": "~0.6.4",
     "load-grunt-config": "~0.7.1",
     "autoprefixer-stylus": "~0.1.0",
     "http-rewrite-middleware": "~0.1.5",

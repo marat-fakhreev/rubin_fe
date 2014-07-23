@@ -22,6 +22,7 @@ module.exports = (grunt) ->
   development:
     files: ['<%= grunt.appDir %>/**/*']
     tasks: [
+      'spriteGenerator:development'
       'jade:html'
       'stylus:watch'
       'coffee:watch'
