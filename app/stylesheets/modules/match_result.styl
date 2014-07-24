@@ -1,14 +1,29 @@
 .match-result
-  min-height: 170px
-  background-color: grey
-  transform: skewY(-1.5deg)
   position: relative
-  top: -5px
+  top: -23px
 
-  .green-bottom
-    sprite(green-bottom)
-    position: absolute
-    left: 50%
-    bottom: -7px
-    margin-left: -550px
-    transform: skewY(1.5deg)
+  .match-inner
+    min-height: 180px
+    height: 180px
+    overflow: hidden
+
+    .match-container
+      height: 100%
+      background-color: grey
+      transform: skewY(-1deg)
+      position: relative
+      top: -5px
+
+      .match-slider
+        width: 100%
+        min-height: 100%
+        padding: 40px 0
+        box-sizing: border-box
+        transform: skewY(1deg)
+
+    .green-bottom
+      sprite(green-bottom)
+      position: absolute
+      left: 50%
+      bottom: -7px
+      margin-left: -550px
