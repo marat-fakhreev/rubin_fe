@@ -19,3 +19,7 @@ module.exports = (grunt) ->
   grunt.registerTask 'default', [
     'development'
   ]
+
+  grunt.registerTask 'sprite', [
+    'spriteGenerator:development'
+  ]
