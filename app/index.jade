@@ -21,7 +21,18 @@ html
     .wrapper
       .wrapper-inner
         .navigation
-          .logo
+          .user-container
+            .left-container
+              .search
+                input(type=text)
+                .search-button
+              ul.social-white
+                li.vk
+                li.fb
+                li.google
+                li.tw
+                li.instagram
+              .logo
           nav
             ul
               li News
@@ -30,16 +41,75 @@ html
               li Tickets
               li Shop
               li Forum
+
         .header
           .header-container
             .slider
-          .green-top
+              .slider-arrow.arrow-left
+              .slider-arrow.arrow-right
+              ul.slider-circles
+                li
+                li
+                li
+              ul.slider-inner
+                li
+                  img(src='images/for-slider.jpg')
+                li
+                  img(src='images/for-slider.jpg')
+                li
+                  img(src='images/for-slider.jpg')
+          .green-top-line
           .match-result
             .match-inner
               .match-container
                 .match-slider
-                  span slider
-              .green-bottom
+                  .slider-arrow.arrow-left
+                  .slider-arrow.arrow-right
+              .green-bottom-line
+
         .main
           .main-inner
+
+      .footer
+        .footer-widgets
+          .green-red-line
+          .widgets
+            ul.widgets-container
+              li.widget
+              li.widget
+              li.widget
+              li.widget
+
+        .footer-sponsors
+          span Sponsors
+          .line.line-one
+            .sponsor.sponsor_ak_bank
+            .sponsor.sponsor_mts
+            .sponsor.sponsor_puma
+            .sponsor.sponsor_sogaz
+            .sponsor.sponsor_taif
+            .sponsor.sponsor_tattelecom
+            .sponsor.sponsor_tgc16
+            .sponsor.sponsor_viatti
+          .line.line-two
+            .sponsor.sponsor_uefa
+            .sponsor.sponsor_eca
+            .sponsor.sponsor_rfs
+            .sponsor.sponsor_fifa
+            .sponsor.sponsor_russain_league
+
+        .footer-text
+          .copyright
+            © Copyright Rubin Kazan 2014
+          ul.footer-links
+            li
+              a(href='#') Contact us
+            li
+              a(href='#') Terms and Conditions
+            li
+              a(href='#') Privacy Policy
+            li
+              a(href='#') Advertising
+            li
+              a(href='#') Sponsors
 

@@ -3,7 +3,8 @@ body
   margin: 0
   padding: 0
   height: 100%
-  background-color: #fff
+  background-color: $white
+  font-family: $fontThin
 
 fieldset
   border: none
@@ -15,17 +16,19 @@ fieldset
   width: 1280px
   margin: 0 auto
   background-color: #e0e0e0
+  box-shadow: 3px 0px 5px rgba($black, 0.2)
 
   .wrapper-inner
+    clearfix()
     margin: 0 auto
     padding: 0 15px
-    background-color: #fff
+    background-color: $white
     width: 985px
     height: auto
     min-height: 100%
     position: relative
     box-sizing: border-box
-    clearfix()
+    box-shadow: 5px 0px 3px rgba($black, 0.3)
 
   .main
     clearfix()

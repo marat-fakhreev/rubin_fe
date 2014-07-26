@@ -1,0 +1,87 @@
+a
+  text-decoration: none
+  fontLinks()
+
+.social-white
+  height: 18px
+
+  > li
+    float: left
+    cursor: pointer
+
+  .vk
+    margin: 4px 5px
+    sprite(icon_white_vk)
+
+    &:hover
+      sprite(icon_white_hover_vk)
+
+  .fb
+    margin: 1px 5px
+    sprite(icon_white_fb)
+
+    &:hover
+      sprite(icon_white_hover_fb)
+
+  .tw
+    margin: 4px 5px
+    sprite(icon_white_tw)
+
+    &:hover
+      sprite(icon_white_hover_tw)
+
+  .google
+    margin: 2px 5px 2px 7px
+    sprite(icon_white_google)
+
+    &:hover
+      sprite(icon_white_hover_google)
+
+  .instagram
+    margin: 3px 5px
+    sprite(icon_white_instagram)
+
+    &:hover
+      sprite(icon_white_hover_instagram)
+
+.search-button
+  cursor: pointer
+  sprite(search_white)
+
+  &:hover
+    sprite(search_green)
+
+ul.slider-circles
+  li
+    cursor: pointer
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    box-sizing: border-box
+    // border: 1px solid $white
+    background-color: $white
+    float: left
+    margin-right: 5px
+
+    &:hover
+      background-color: $green
+
+.slider-arrow
+  position: absolute
+  top: 50%
+  margin-top: -10px
+  cursor: pointer
+
+  &.arrow-left
+    left: 10px
+    sprite(arrow_big_left)
+
+    &:hover
+      sprite(arrow_big_hover_left)
+
+  &.arrow-right
+    right: 10px
+    sprite(arrow_big_right)
+
+    &:hover
+      sprite(arrow_big_hover_right)
