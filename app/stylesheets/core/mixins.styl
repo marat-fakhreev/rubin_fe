@@ -11,3 +11,59 @@ clearfix()
 
 nolist()
   list-style: none outside
+
+$fontBold = '2B851F_0_0'
+$fontThin = '2B851F_1_0'
+
+fontPageTitle()
+  font-family: $fontBold
+  text-transform: capitalize
+  font-size: 28px
+  color: $green
+
+fontTitle()
+  font-family: $fontBold
+  text-transform: capitalize
+  font-size: 20px
+  line-height: 24px
+  color: $black
+
+fontBody()
+  font-family: $fontThin
+  font-size: 16px
+  line-height: 20px
+  color: $black
+
+fontList()
+  font-family: $fontThin
+  font-size: 16px
+  line-height: 20px
+  color: $black
+
+fontBlackCaption()
+  font-family: $fontThin
+  font-size: 12px
+  line-height: 17px
+  color: $black
+
+fontGreyCaption()
+  fontBlackCaption()
+  color: $greyThree
+
+fontLinks()
+  font-family: inherits
+  text-transform: inherits
+  font-size: inherits
+  line-height: inherits
+  color: $red
+
+  &:hover
+    color: $green
+
+gradient($color1, $color2)
+  background-image: -webkit-gradient(linear left top, left bottom, color-stop(0, $color1), color-stop(1, $color2))
+  background-image: -o-linear-gradient(bottom, $color1 0%, $color2 100%)
+  background-image: -moz-linear-gradient(bottom, $color1 0%, $color2 100%)
+  background-image: -webkit-linear-gradient(bottom, $color1 0%, $color2 100%)
+  background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%)
+  background-image: linear-gradient(to bottom, $color1 0%, $color2 100%)
