@@ -1,0 +1,83 @@
+.tile
+  position: relative
+
+  .tile-inner
+    width: 100%
+    height: 100%
+    overflow: hidden
+    position: relative
+
+  .image
+    background-size: cover
+    transform: scale(1)
+    transition: transform 1s ease
+
+    &:hover
+      transform: scale(1.2)
+      transition: transform 0.5s ease
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 5px
+    left: -7px
+    z-index: 50
+
+  &.academy
+    &::before
+      sprite(ribbon_academy)
+  &.club
+    &::before
+      sprite(ribbon_club)
+  &.kamaz
+    &::before
+      sprite(ribbon_kamaz)
+  &.neftekhimik
+    &::before
+      sprite(ribbon_neftekhimik)
+  &.rubin-2
+    &::before
+      sprite(ribbon_rubin_2)
+  &.rubin-m
+    &::before
+      sprite(ribbon_rubin_m)
+  &.team
+    &::before
+      sprite(ribbon_team)
+
+.home-grid
+  h2
+    color: $black
+
+  ul.grid
+    clearfix()
+
+    li
+      float: left
+      margin: 0 20px
+
+      &.col-featured
+        width: 345px
+        margin-left: 0
+
+      &.col-trending
+        width: 305px
+        height: 500px
+        background-color: blue
+
+      &.col-breaking
+        width: 225px
+        height: 500px
+        background-color: green
+        margin-right: 0
+
+  .col-featured
+    .tile
+      margin: 20px 0
+      height: 345px
+      background-color: $greyOne
+
+      .image
+        width: 100%
+        height: 100%

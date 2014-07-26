@@ -7,3 +7,7 @@ module.exports = (grunt) ->
       { expand: true, cwd: '<%= grunt.appDir %>/bower_components', dest: '<%= grunt.publicDir %>/bower_components', src: '**' }
       { expand: true, cwd: '<%= grunt.appDir %>/vendor', dest: '<%= grunt.publicDir %>/vendor', src: '**' }
     ]
+  images:
+    files: [
+      { expand: true, cwd: '<%= grunt.appDir %>/images', dest: '<%= grunt.publicDir %>/images', src: ['**', '!sprite/**'] }
+    ]
