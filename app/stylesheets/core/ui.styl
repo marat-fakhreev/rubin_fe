@@ -70,7 +70,6 @@ h3
     height: 12px
     border-radius: 50%
     box-sizing: border-box
-    // border: 1px solid $white
     background-color: $white
     float: left
     margin-right: 5px
@@ -127,3 +126,13 @@ h3
 
   &.photo
     sprite(photo)
+
+.widget
+  position: relative
+
+  &::after
+    content: ''
+    top: 10px
+    right: 10px
+    position: absolute
+    sprite(edit_white)
