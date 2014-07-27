@@ -20,7 +20,7 @@ html
   body
     .wrapper
       .wrapper-inner
-        .navigation
+        section.navigation
           .user-container
             .left-container
               .search
@@ -42,7 +42,7 @@ html
               li Shop
               li Forum
 
-        .header
+        header.header
           .header-container
             .slider
               .slider-arrow.arrow-left
@@ -67,29 +67,135 @@ html
                   .slider-arrow.arrow-right
               .green-bottom-line
 
-        .main
+        section.main
           .main-inner
             .home-grid
               ul.grid
                 li.col-featured
                   h2 Featured
-                  .tile.club
-                    .tile-inner
+                  a(href='#' class='tile club')
+                    .image-wrapper
                       .image(style='background-image: url(../images/for-slider.jpg)')
-                  .tile.team
-                    .tile-inner
+                    .tile-content
+                      h3 Loremipsum Donec
+                      p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                      .buttons
+                        .shares 32 Shares
+                        .video
+                  a(href='#' class='tile team')
+                    .image-wrapper
                       .image(style='background-image: url(../images/for-slider.jpg)')
-                  .tile.academy
-                    .tile-inner
+                    .tile-content
+                      h3 Loremipsum Donec
+                      p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                      .buttons
+                        .shares 32 Shares
+                  a(href='#' class='tile academy')
+                    .image-wrapper
                       .image(style='background-image: url(../images/for-slider.jpg)')
+                    .tile-content
+                      h3 Loremipsum Donec
+                      p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                      .buttons
+                        .shares 32 Shares
+                        .audio
 
                 li.col-trending
                   h2 Trending
-                li.col-breaking
-                  h2 Breaking
+                  a(href='#' class='tile club')
+                    .image-wrapper
+                      .image(style='background-image: url(../images/for-home-trenging.jpg)')
+                    .tile-content
+                      h3 Loremipsum Donec
+                      p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                      .buttons
+                        .shares 32 Shares
+                        .video
+                  .twitter-widget.tile.widget
+                    span.on-twitter On Twitter
+                    .tw-icon
+                    ul
+                      li
+                        .tw-picture
+                        .tw-content
+                          .title
+                            span FC Rubin Kazan
+                          .date
+                            time 20-11-2013
+                          .text
+                            | Rubin vs. Krasnodar Review (VIDEO): Please enjoy the video review of Rubin vs. Krasnodar match, Prem…
+                      li
+                        .tw-picture
+                        .tw-content
+                          .title
+                            span FC Rubin Kazan
+                          .date
+                            time 20-11-2013
+                          .text
+                            | Rubin vs. Krasnodar Review (VIDEO): Please enjoy the video review of Rubin vs. Krasnodar match, Prem…
+                      li
+                        .tw-picture
+                        .tw-content
+                          .title
+                            span FC Rubin Kazan
+                          .date
+                            time 20-11-2013
+                          .text
+                            | Rubin vs. Krasnodar Review (VIDEO): Please enjoy the video review of Rubin vs. Krasnodar match, Prem…
+                  a(href='#' class='tile')
+                    .image-wrapper
+                      .image(style='background-image: url(../images/for-home-trenging.jpg)')
+                    .tile-content
+                      h3 Loremipsum Donec
+                      p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa. Molupiet et ad quiam sitio iusciet pa.
+                      .buttons
+                        .shares 132 Shares
+                  a(href='#' class='tile kazaz')
+                    .image-wrapper
+                      .image(style='background-image: url(../images/for-home-trenging.jpg)')
+                    .tile-content
+                      h3 Loremipsum Donec
+                      p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                      .buttons
+                        .shares 32 Shares
+                        .photo
 
-      .footer
-        .footer-widgets
+                li.col-additional
+                  h2 Breaking
+                  .breaking.tile
+                    ul
+                      li
+                        a(href='#' class='breaking-item')
+                          p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                          .buttons
+                            .shares 32 Shares
+                            .video
+                            .date 5 minutes ago
+                      li
+                        a(href='#' class='breaking-item')
+                          p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
+                          .buttons
+                            .shares 32 Shares
+                            .date 5 minutes ago
+                      li
+                        a(href='#' class='breaking-item tile neftekhimik')
+                          .image-container
+                            .image-title Solescid ut quat
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-home-trenging.jpg)')
+                          .buttons
+                            .shares 32 Shares
+                            .date 5 minutes ago
+
+                    .rubin-tv-widget.tile.widget
+                      h2 Rubin Tv
+                      a(href='#')
+                        .image-wrapper
+                          .image(style='background-image: url(../images/for-home-trenging.jpg)')
+                        | View more videos
+
+      footer.footer
+        section.footer-widgets
           .green-red-line
           .widgets
             ul.widgets-container
@@ -98,7 +204,7 @@ html
               li.widget
               li.widget
 
-        .footer-sponsors
+        section.footer-sponsors
           span Sponsors
           .line.line-one
             .sponsor.sponsor_ak_bank
@@ -116,7 +222,7 @@ html
             .sponsor.sponsor_fifa
             .sponsor.sponsor_russain_league
 
-        .footer-text
+        section.footer-text
           .copyright
             © Copyright Rubin Kazan 2014
           ul.footer-links

@@ -2,8 +2,17 @@ a
   text-decoration: none
   fontLinks()
 
+p
+  fontBody()
+  color: $black
+  text-align: justify
+
 h2
   fontPageTitle()
+
+h3
+  fontPageTitle()
+  color: $white
 
 .social-white
   height: 18px
@@ -54,7 +63,7 @@ h2
   &:hover
     sprite(search_green)
 
-ul.slider-circles
+.slider-circles
   li
     cursor: pointer
     width: 12px
@@ -88,3 +97,33 @@ ul.slider-circles
 
     &:hover
       sprite(arrow_big_hover_right)
+
+.shares
+  float: left
+  position: relative
+  padding: 0 0 0 20px
+  color: $greyOne
+
+  &::before
+    sprite(share_white)
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+
+.audio
+.video
+.photo
+  position: absolute
+  right: 5px
+  bottom: 0px
+
+  &.audio
+    sprite(sound)
+    bottom: -4px
+
+  &.video
+    sprite(video)
+
+  &.photo
+    sprite(photo)

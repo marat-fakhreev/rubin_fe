@@ -1,7 +1,10 @@
 .tile
+  display: block
   position: relative
+  box-sizing: border-box
+  clearfix()
 
-  .tile-inner
+  .image-wrapper
     width: 100%
     height: 100%
     overflow: hidden
@@ -10,9 +13,10 @@
   .image
     background-size: cover
     transform: scale(1)
-    transition: transform 1s ease
+    transition: transform 0.5s ease
 
-    &:hover
+  &:hover
+    .image
       transform: scale(1.2)
       transition: transform 0.5s ease
 
@@ -53,7 +57,7 @@
   ul.grid
     clearfix()
 
-    li
+    > li
       float: left
       margin: 0 20px
 
@@ -63,13 +67,9 @@
 
       &.col-trending
         width: 305px
-        height: 500px
-        background-color: blue
 
-      &.col-breaking
+      &.col-additional
         width: 225px
-        height: 500px
-        background-color: green
         margin-right: 0
 
   .col-featured
@@ -78,6 +78,234 @@
       height: 345px
       background-color: $greyOne
 
+      .tile-content
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        height: 110px
+        background-color: rgba($black, 0.5)
+        box-sizing: border-box
+        padding: 10px
+
+        h3
+          margin: 0 0 5px 0
+
+        p
+          fontBody()
+          font-size: 20px
+          color: $white
+          display: block
+          height: 40px
+          overflow: hidden
+
+      &:hover
+        h3
+          color: $green
+
+      .buttons
+        width: 100%
+        position: absolute
+        bottom: 5px
+        left: 0px
+        padding: 0 10px
+        box-sizing: border-box
+
       .image
         width: 100%
         height: 100%
+
+  .col-trending
+    .tile
+      margin: 20px 0
+      height: auto
+
+      .tile-content
+        box-sizing: border-box
+        padding: 10px 0 25px 0
+
+      h3
+        fontBody()
+        font-family: $fontBold
+        font-size: 16px
+        color: $red
+
+      p
+        fontBody()
+
+      &:hover
+        h3
+          color: $green
+
+      .buttons
+        width: 100%
+        position: absolute
+        bottom: 5px
+        left: 0px
+        box-sizing: border-box
+
+      .shares
+        color: $greyTwo
+
+        &::before
+          sprite(share_red)
+
+      .image-wrapper
+        width: 100%
+        height: 170px
+
+      .image
+        width: 100%
+        height: 100%
+
+  .col-additional
+    .breaking
+      margin: 20px 0
+      height: auto
+
+      ul
+        li
+          display: block
+          box-sizing: border-box
+          border-bottom: 1px solid $red
+          padding: 15px 0
+
+          p
+            color: $red
+            padding: 0 0 25px 0
+
+          &:first-child
+            padding: 0 0 15px 0
+
+          &:last-child
+            border-bottom: none
+
+      .breaking-item
+        display: block
+        position: relative
+
+        .image-container
+          padding: 0 0 30px 0
+          position: relative
+
+        .image-title
+          position: absolute
+          height: 27px
+          background-color: rgba($black, 0.5)
+          left: 0
+          right: 0
+          bottom: 30px
+          z-index: 10
+          line-height: 30px
+          padding: 0 10px
+          color: $white
+
+        .image-wrapper
+          width: 100%
+          height: 90px
+          overflow: hidden
+
+        .image
+          width: 100%
+          height: 100%
+          background-size: cover
+          transform: scale(1)
+          transition: transform 0.5s ease
+
+        &:hover
+          .image-title
+            color: $green
+
+          .image
+            transform: scale(1.2)
+            transition: transform 0.5s ease
+
+      .buttons
+        width: 100%
+        position: absolute
+        bottom: 5px
+        left: 0px
+        box-sizing: border-box
+
+      .date
+        float: right
+        color: $greyThree
+
+      .audio,
+      .video,
+      .photo
+        position: relative
+        right: 0
+        float right
+        margin: 0 0 0 5px
+
+      .shares
+        color: $greyThree
+
+        &::before
+          sprite(share_red)
+
+.twitter-widget
+  background-color: $greyOne
+  padding: 10px
+
+  .on-twitter
+    fontTitle()
+    position: relative
+    font-size: 17px
+    padding: 0 30px 0 0
+
+    &::after
+      content: ''
+      position: absolute
+      right: 0
+      top: -5px
+      sprite(icon_red_tw)
+      transform: scale(0.7)
+
+  ul
+    li
+      clearfix()
+      display: block
+      float: none
+      margin: 0
+      padding: 12px 0
+      border-bottom: 1px solid $green
+
+  .tw-picture
+    sprite(tw_default_pic)
+    float: left
+    margin: 0 10px 0 0
+
+  .tw-content
+    width: 235px
+    float: left
+    text-align: justify
+
+    .title
+      float: left
+
+    .date
+      float: right
+
+    .text
+      padding: 4px 0 0 0
+      clear: both
+      color: $red
+
+.rubin-tv-widget
+  margin: 30px 0 0 0
+
+  .image-wrapper
+    width: 100%
+    height: 125px
+    overflow: hidden
+    margin: 10px 0
+
+  .image
+    width: 100%
+    height: 100%
+    background-size: cover
+    transform: scale(1)
+    transition: transform 0.5s ease
+
