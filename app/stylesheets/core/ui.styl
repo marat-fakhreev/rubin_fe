@@ -1,3 +1,7 @@
+*
+  &.active
+    display: block
+
 a
   text-decoration: none
   fontLinks()
@@ -23,45 +27,45 @@ h3
 
   .vk
     margin: 4px 5px
-    sprite(icon_white_vk)
+    imgSprite(icon_white_vk)
 
     &:hover
-      sprite(icon_white_hover_vk)
+      imgSprite(icon_white_hover_vk)
 
   .fb
     margin: 1px 5px
-    sprite(icon_white_fb)
+    imgSprite(icon_white_fb)
 
     &:hover
-      sprite(icon_white_hover_fb)
+      imgSprite(icon_white_hover_fb)
 
   .tw
     margin: 4px 5px
-    sprite(icon_white_tw)
+    imgSprite(icon_white_tw)
 
     &:hover
-      sprite(icon_white_hover_tw)
+      imgSprite(icon_white_hover_tw)
 
   .google
     margin: 2px 5px 2px 7px
-    sprite(icon_white_google)
+    imgSprite(icon_white_google)
 
     &:hover
-      sprite(icon_white_hover_google)
+      imgSprite(icon_white_hover_google)
 
   .instagram
     margin: 3px 5px
-    sprite(icon_white_instagram)
+    imgSprite(icon_white_instagram)
 
     &:hover
-      sprite(icon_white_hover_instagram)
+      imgSprite(icon_white_hover_instagram)
 
 .search-button
   cursor: pointer
-  sprite(search_white)
+  imgSprite(search_white)
 
   &:hover
-    sprite(search_green)
+    imgSprite(search_green)
 
 .slider-circles
   li
@@ -85,17 +89,17 @@ h3
 
   &.arrow-left
     left: 10px
-    sprite(arrow_big_left)
+    imgSprite(arrow_big_left)
 
     &:hover
-      sprite(arrow_big_hover_left)
+      imgSprite(arrow_big_hover_left)
 
   &.arrow-right
     right: 10px
-    sprite(arrow_big_right)
+    imgSprite(arrow_big_right)
 
     &:hover
-      sprite(arrow_big_hover_right)
+      imgSprite(arrow_big_hover_right)
 
 .shares
   float: left
@@ -104,7 +108,7 @@ h3
   color: $greyOne
 
   &::before
-    sprite(share_white)
+    imgSprite(share_white)
     content: ''
     position: absolute
     left: 0
@@ -118,14 +122,14 @@ h3
   bottom: 0px
 
   &.audio
-    sprite(sound)
+    imgSprite(sound)
     bottom: -4px
 
   &.video
-    sprite(video)
+    imgSprite(video)
 
   &.photo
-    sprite(photo)
+    imgSprite(photo)
 
 .widget
   position: relative
@@ -135,4 +139,4 @@ h3
     top: 10px
     right: 10px
     position: absolute
-    sprite(edit_white)
+    imgSprite(edit_white)

@@ -4,7 +4,7 @@ html
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description', content='')
-    meta(name='viewport', content='width=device-width, initial-scale=0.7')
+    meta(name="viewport" content="minimum-scale=1.0, maximum-scale=1.0")
     title Rubin
 
     link(rel="stylesheet", href="/stylesheets/style.css")
@@ -16,6 +16,7 @@ html
     script(type='text/javascript', src='/scripts/app.js')
     script(type='text/javascript', src='/scripts/layouts/main.js')
     script(type='text/javascript', src='/scripts/views/main_view.js')
+    script(type='text/javascript', src='/scripts/views/navigation_view.js')
 
   body
     .wrapper
@@ -44,6 +45,48 @@ html
 
         header.header
           .header-container
+            .dropdown-menu-container
+              .menu.news
+              .menu.season
+                ul
+                  li.menu-item
+                    a Rubin
+                    .menu-item-content
+                      ul
+                        li
+                          a(href='#')
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-slider.jpg)')
+                            | Ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.
+                        li
+                          a(href='#')
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-slider.jpg)')
+                            | Ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.
+                        li
+                          a(href='#')
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-slider.jpg)')
+                            | Ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.
+                  li.menu-item
+                    a Rubin-2
+                    .menu-item-content
+                  li.menu-item
+                    a Neftekhimik
+                    .menu-item-content
+                  li.menu-item
+                    a Rubin-M
+                    .menu-item-content
+                  li.menu-item
+                    a Academy
+                    .menu-item-content
+                  li.menu-item
+                    a Kamaz
+                    .menu-item-content
+              .menu.club
+              .menu.tickets
+              .menu.shop
+              .menu.forum
             .slider
               .slider-arrow.arrow-left
               .slider-arrow.arrow-right

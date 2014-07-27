@@ -7,3 +7,5 @@ module.exports = (grunt) ->
     stylesheetPath: '<%= grunt.appDir %>/stylesheets/sprite.styl'
     layout: 'vertical'
     compositor: 'gm'
+    layoutOptions:
+      padding: 0

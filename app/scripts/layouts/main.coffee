@@ -1,12 +1,16 @@
 App.Layouts = App.Layouts or {}
 
 class App.Layouts.Main
+  ui: {}
+
   constructor: ->
-    @bindUi()
-    @bindViews()
+    @_bindUi()
+    @_bindViews()
 
-  bindUi: ->
-    console.log 'layouts ui binded'
+  _bindUi: ->
+    @ui =
+      navigation: $('.navigation')
+      header: $('.header')
 
-  bindViews: ->
-    console.log 'views binded'
+  _bindViews: ->
+    new App.Views.NavigationView(@ui.navigation, @ui.header)
