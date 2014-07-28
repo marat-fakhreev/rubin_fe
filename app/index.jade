@@ -286,10 +286,34 @@ html
                       data-height='225px'
                       data-loop='true'
                     )
-                      .match-item
-                        | text one
-                      .match-item
-                        | text two
+                      .score-item
+                        .rivals
+                          .rivals-item
+                            .image-wrapper
+                              img(src='images/rubin-for-match.png')
+                            span Rubin, Kazan
+                          .rivals-item
+                            .image-wrapper
+                              img(src='images/zenit-for-match.png')
+                            span Zenit, St. Petersbugr
+                        .score
+                          | 2 : 0
+                        span.title
+                          | 22 november 2014 <br> Kazan Arena, Kazan
+                      .score-item
+                        .rivals
+                          .rivals-item
+                            .image-wrapper
+                              img(src='images/zenit-for-match.png')
+                            span Zenit, St. Petersbugr
+                          .rivals-item
+                            .image-wrapper
+                              img(src='images/rubin-for-match.png')
+                            span Rubin, Kazan
+                        .score
+                          | 1 : 2
+                        span.title
+                          | 31 december 2014 <br> Kazan Arena, Kazan
 
       footer.footer
         section.footer-widgets
