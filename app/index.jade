@@ -92,15 +92,13 @@ html
               class='fotorama slider-big'
               data-width='100%'
               data-height='350px'
-              data-minwidth='955px'
-              data-minheight='350px'
               data-loop='true'
             )
               img(src='images/for-slider.jpg')
               img(src='images/for-slider.jpg')
               img(src='images/for-slider.jpg')
           .green-top-line
-          .match-result
+          .match-information
             .match-inner
               .match-container
                 .match-slider
@@ -108,14 +106,46 @@ html
                     class='fotorama slider'
                     data-width='100%'
                     data-height='125px'
-                    data-minwidth='955px'
-                    data-minheight='125px'
                     data-loop='true'
                   )
                     .match-item
-                      | text one
+                      .rivals
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/rubin-for-match.png')
+                          span Rubin, Kazan
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/zenit-for-match.png')
+                          span Zenit, St. Petersbugr
+                      .title
+                        span.date
+                          | 10 november 2014
+                        span.time
+                          | 20:15
+                        span.place
+                          | Kazan Arena, Kazan
+                        a(href='#' class='tickets')
+                          | Get tickets
                     .match-item
-                      | text two
+                      .rivals
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/zenit-for-match.png')
+                          span Zenit, St. Petersbugr
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/rubin-for-match.png')
+                          span Rubin, Kazan
+                      .title
+                        span.date
+                          | 22 november 2014
+                        span.time
+                          | 22:22
+                        span.place
+                          | Kazan Arena, Kazan
+                        a(href='#' class='tickets')
+                          | Get tickets
               .green-bottom-line
 
         section.main
@@ -126,7 +156,7 @@ html
                   h2 Featured
                   a(href='#' class='tile club')
                     .image-wrapper
-                      .image(style='background-image: url(../images/for-slider.jpg)')
+                      .image(style='background-image: url(../images/for-featured.jpg)')
                     .tile-content
                       h3 Loremipsum Donec
                       p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
@@ -135,7 +165,7 @@ html
                         .video
                   a(href='#' class='tile team')
                     .image-wrapper
-                      .image(style='background-image: url(../images/for-slider.jpg)')
+                      .image(style='background-image: url(../images/for-featured.jpg)')
                     .tile-content
                       h3 Loremipsum Donec
                       p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
@@ -143,7 +173,7 @@ html
                         .shares 32 Shares
                   a(href='#' class='tile academy')
                     .image-wrapper
-                      .image(style='background-image: url(../images/for-slider.jpg)')
+                      .image(style='background-image: url(../images/for-featured.jpg)')
                     .tile-content
                       h3 Loremipsum Donec
                       p Eu pretium quis sem nulla. Molupiet et ad quiam sitio iusciet pa.
@@ -250,7 +280,16 @@ html
                     .image(style='background-image: url(../images/for-advertisement.jpg)')
 
                   .score-widget.tile.widget
-
+                    div(
+                      class='fotorama slider'
+                      data-width='225px'
+                      data-height='225px'
+                      data-loop='true'
+                    )
+                      .match-item
+                        | text one
+                      .match-item
+                        | text two
 
       footer.footer
         section.footer-widgets
