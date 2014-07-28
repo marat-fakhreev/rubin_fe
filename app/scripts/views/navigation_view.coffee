@@ -13,6 +13,7 @@ class App.Views.NavigationView
       dropDownMenu: @$header.find('.dropdown-menu-container')
       menu: @$header.find('.menu')
       secondMenuItem: @$header.find('.menu-item')
+      secondMenuItemContent: @$header.find('.menu-item-content')
 
   _bindEvents: ->
     @ui.navMenuItem.on('click', @onClickNavMenuItem)
@@ -34,8 +35,9 @@ class App.Views.NavigationView
       @ui.dropDownMenu.addClass('active')
       @ui.menu.eq(index).addClass('active')
 
-  onClickSecondMenuItem: (event) ->
+  onClickSecondMenuItem: (event) =>
     event.stopPropagation()
     self = $(event.currentTarget)
 
+    @ui.secondMenuItemContent.removeClass('active')
     self.find('.menu-item-content').addClass('active')

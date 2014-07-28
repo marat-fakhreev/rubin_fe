@@ -1,0 +1,51 @@
+.fotorama
+  &.slider
+    .fotorama__nav
+      display: none
+
+  .fotorama__wrap
+    &.fotorama__wrap--no-controls
+      .fotorama__arr--prev
+      .fotorama__arr--next
+        transform: translate3d(0, 0, 0) !important
+        opacity: 1 !important
+
+  .fotorama__nav-wrap
+    position: absolute
+    left: 10px
+    bottom: 35px
+
+    .fotorama__nav
+      width: auto !important
+
+  .fotorama__dot,
+  .fotorama__active .fotorama__dot
+    cursor: pointer
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    box-sizing: border-box
+    background-color: $white
+    margin-right: 5px
+
+    &:hover
+      background-color: $green
+
+  .fotorama__active
+    .fotorama__dot
+      background-color: $green
+      border: none
+
+  .fotorama__arr--prev
+    left: 10px
+    imgSprite(arrow_big_left)
+
+    &:hover
+      imgSprite(arrow_big_hover_left)
+
+  .fotorama__arr--next
+    right: 10px
+    imgSprite(arrow_big_right)
+
+    &:hover
+      imgSprite(arrow_big_hover_right)
