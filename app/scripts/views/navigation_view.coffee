@@ -12,12 +12,12 @@ class App.Views.NavigationView
       navMenuItem: @$el.find('nav li')
       dropDownMenu: @$header.find('.dropdown-menu-container')
       menu: @$header.find('.menu')
-      secondMenuItem: @$header.find('.menu-item')
-      secondMenuItemContent: @$header.find('.menu-item-content')
+      secondMenuLink: @$header.find('.menu-item-link')
+      secondMenuContent: @$header.find('.menu-item-content')
 
   _bindEvents: ->
     @ui.navMenuItem.on('click', @onClickNavMenuItem)
-    @ui.secondMenuItem.on('click', @onClickSecondMenuItem)
+    @ui.secondMenuLink.on('mouseover', @onClickSecondMenuItem)
 
   onClickNavMenuItem: (event) =>
     event.stopPropagation()
@@ -37,7 +37,8 @@ class App.Views.NavigationView
 
   onClickSecondMenuItem: (event) =>
     event.stopPropagation()
-    self = $(event.currentTarget)
+    content = $(event.currentTarget).siblings('.menu-item-content')
 
-    @ui.secondMenuItemContent.removeClass('active')
-    self.find('.menu-item-content').addClass('active')
+    @ui.secondMenuContent.removeClass('active').slideUp 300, ->
+      content.slideDown 300, ->
+        content.addClass('active')
