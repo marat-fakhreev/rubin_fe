@@ -55,6 +55,9 @@
     color: $black
 
   ul.grid
+    padding: 0 15px
+    max-height: 1270px
+    overflow: hidden
     clearfix()
 
     > li
@@ -259,3 +262,51 @@
     background-size: cover
     transform: scale(1)
     transition: transform 0.5s ease
+
+.load-more
+  text-align: center
+  cursor: pointer
+  margin: 0 15px
+
+  &.clicked
+    .default
+      display: none
+
+    .clicked
+      display: inline
+
+  .default
+    display: inline
+
+  .clicked
+    display: none
+
+  span
+    fontBody()
+    position: relative
+    color: $red
+
+    &::before
+      sprite(arrow_small_red_bottom)
+      content: ''
+      position: absolute
+      right: -14px
+      top: 4px
+
+    &.clicked
+      &::before
+        sprite(arrow_small_red_top)
+
+  &:hover
+    background-color: rgba($black, 0.1)
+
+    span
+      color: $green
+
+      &::before
+        sprite(arrow_small_green_bottom)
+
+      &.clicked
+        &::before
+          sprite(arrow_small_green_top)
+

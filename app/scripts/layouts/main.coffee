@@ -11,6 +11,8 @@ class App.Layouts.Main
     @ui =
       navigation: $('.navigation')
       header: $('.header')
+      main: $('.main')
 
   _bindViews: ->
     new App.Views.NavigationView(@ui.navigation, @ui.header)
+    new App.Views.MainView(@ui.main)
