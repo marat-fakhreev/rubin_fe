@@ -1,12 +1,11 @@
 .header
   padding: 0 15px
 
-  .header-container
+  .header-top-part
     clearfix()
-    height: 450px
     background-color: #850010
     box-sizing: border-box
-    padding: 100px 0 0 0
+    padding: 97px 0 0 0
 
   .dropdown-menu-container
     position: absolute
@@ -110,10 +109,14 @@
           display: block
           opacity: 1
 
-  .green-top-line
-    imgSprite(green_ui_line_top)
-    position: absolute
-    left: 50%
-    top: 425px
-    margin-left: -551px
-    z-index: 10
+  .header-container
+    position: relative
+    min-height: 28px
+
+    .green-top-line
+      imgSprite(green_ui_line_top)
+      position: absolute
+      left: 50%
+      bottom: -35px
+      margin-left: -551px
+      z-index: 10
