@@ -90,80 +90,107 @@ html
               .menu.shop
               .menu.forum
             .header-container
-              div(
-                class='fotorama slider'
-                data-width='100%'
-                data-height='350px'
-                data-loop='true'
-              )
-                img(src='images/for-slider.jpg')
-                img(src='images/for-slider.jpg')
-                img(src='images/for-slider.jpg')
+              //- header slider
+
+              //- div(
+              //-   class='fotorama slider'
+              //-   data-width='100%'
+              //-   data-height='350px'
+              //-   data-loop='true'
+              //- )
+              //-   img(src='images/for-slider.jpg')
+              //-   img(src='images/for-slider.jpg')
+              //-   img(src='images/for-slider.jpg')
               .green-top-line
 
           //- match result block
 
-          .match-result
-            .match-inner
-              .match-container
-                .match-slider
-                  div(
-                    class='fotorama slider slider-with-data'
-                    data-width='100%'
-                    data-height='125px'
-                    data-loop='true'
-                  )
-                    .match-item
-                      .rivals
-                        .rivals-item
-                          .image-wrapper
-                            img(src='images/rubin-for-match.png')
-                          span Rubin, Kazan
-                        .rivals-item
-                          .image-wrapper
-                            img(src='images/zenit-for-match.png')
-                          span Zenit, St. Petersbugr
-                      .title
-                        span.date
-                          | 10 november 2014
-                        span.time
-                          | 20:15
-                        span.place
-                          | Kazan Arena, Kazan
-                        a(href='#' class='tickets')
-                          | Get tickets
-                    .match-item
-                      .rivals
-                        .rivals-item
-                          .image-wrapper
-                            img(src='images/zenit-for-match.png')
-                          span Zenit, St. Petersbugr
-                        .rivals-item
-                          .image-wrapper
-                            img(src='images/rubin-for-match.png')
-                          span Rubin, Kazan
-                      .title
-                        span.date
-                          | 22 november 2014
-                        span.time
-                          | 22:22
-                        span.place
-                          | Kazan Arena, Kazan
-                        a(href='#' class='tickets')
-                          | Get tickets
-              .green-bottom-line
+          //- .match-result
+          //-   .match-inner
+          //-     .match-container
+          //-       .match-slider
+          //-         div(
+          //-           class='fotorama slider slider-with-data'
+          //-           data-width='100%'
+          //-           data-height='125px'
+          //-           data-loop='true'
+          //-         )
+          //-           .match-item
+          //-             .rivals
+          //-               .rivals-item
+          //-                 .image-wrapper
+          //-                   img(src='images/rubin-for-match.png')
+          //-                 span Rubin, Kazan
+          //-               .rivals-item
+          //-                 .logo-wrapper
+          //-                   img(src='images/zenit-for-match.png')
+          //-                 span Zenit, St. Petersbugr
+          //-             .title
+          //-               span.date
+          //-                 | 10 november 2014
+          //-               span.time
+          //-                 | 20:15
+          //-               span.place
+          //-                 | Kazan Arena, Kazan
+          //-               a(href='#' class='tickets')
+          //-                 | Get tickets
+          //-           .match-item
+          //-             .rivals
+          //-               .rivals-item
+          //-                 .logo-wrapper
+          //-                   img(src='images/zenit-for-match.png')
+          //-                 span Zenit, St. Petersbugr
+          //-               .rivals-item
+          //-                 .image-wrapper
+          //-                   img(src='images/rubin-for-match.png')
+          //-                 span Rubin, Kazan
+          //-             .title
+          //-               span.date
+          //-                 | 22 november 2014
+          //-               span.time
+          //-                 | 22:22
+          //-               span.place
+          //-                 | Kazan Arena, Kazan
+          //-               a(href='#' class='tickets')
+          //-                 | Get tickets
+          //-     .green-bottom-line
 
           //- current match information block
 
-          //- div(
-          //-   class='fotorama'
-          //-   data-width='100%'
-          //-   data-height='350px'
-          //-   data-loop='true'
-          //- )
-          //-   img(src='images/for-slider.jpg')
-          //-   img(src='images/for-slider.jpg')
-          //-   img(src='images/for-slider.jpg')
+          .current-match-information
+            .match-inner
+              .match-container
+                .match-slider
+                  .match-item
+                    .rivals
+                      .rivals-item.current-rivals-item
+                        .score-item.left-item 1
+                        .logo-wrapper
+                          img(src='images/rubin-for-match.png')
+                          span Rubin, Kazan
+                      .rivals-item.current-rivals-item
+                        .score-item.right-item 2
+                        .logo-wrapper
+                          img(src='images/zenit-for-match.png')
+                          span Zenit, St. Petersbugr
+                    .title
+                      span.live-text
+                        | Live: Premier League match
+                      span.current-date
+                        | 10 November 2014
+                      span.match-time
+                        | 59
+              .green-bottom-line
+
+          div(
+            class='fotorama'
+            data-width='100%'
+            data-height='350px'
+            data-loop='true'
+          )
+            img(src='images/for-slider.jpg')
+            img(src='images/for-slider.jpg')
+            img(src='images/for-slider.jpg')
 
         section.main
           .home-grid
