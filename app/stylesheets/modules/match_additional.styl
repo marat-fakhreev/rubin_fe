@@ -15,11 +15,11 @@
       position: relative
       top: -5px
 
-      .match-slider
-        width: 100%
-        height: 125px
-        padding: 40px 0
-        transform: skewY(1deg)
+    .match-slider
+    .match-information
+      width: 100%
+      padding: 40px 0
+      transform: skewY(1deg)
 
     .green-bottom-line
       imgSprite(green_ui_line_bottom)
@@ -80,10 +80,11 @@
     .logo-wrapper
       position: relative
       width: 100%
-      height: 100%
+      height: 100px
       line-height: 130px
 
     span
+      fontBody()
       position: absolute
       bottom: 0px
       text-align: center
@@ -99,11 +100,19 @@
 
 .current-match-information
   margin: 0 0 60px 0
+  max-height: 420px
+  overflow: hidden
 
   .match-inner
     min-height: 250px
-    height: 250px
+    // height: 250px
+    height: auto
     overflow: hidden
+
+    .match-information
+      width: 100%
+      padding: 40px 10px 50px 10px
+      box-sizing: border-box
 
   .match-item
     .current-date
@@ -139,8 +148,8 @@
         right: 200px
 
   .score-item
-    position: absolute
     fontPageTitle()
+    position: absolute
     font-size: 75px
     color: $white
 
@@ -153,4 +162,15 @@
 
   .logo-wrapper
     span
-      bottom: -120px
+      bottom: -15px
+
+  .current-match-table-left
+    width: 680px
+    margin: 0 40px 0 0
+    float: left
+    background-color: $black
+
+  .current-match-table-right
+    width: 215px
+    float: left
+    background-color: $black
