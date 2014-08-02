@@ -15,4 +15,5 @@ class App.Layouts.Main
 
   _bindViews: ->
     new App.Views.NavigationView(@ui.navigation, @ui.header)
+    new App.Views.HeaderView(@ui.header)
     new App.Views.MainView(@ui.main)

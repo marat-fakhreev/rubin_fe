@@ -1,8 +1,6 @@
 App.Views = App.Views or {}
 
 class App.Views.MainView
-  HEIGHT = 1270
-
   constructor: (@$el) ->
     @_bindUi()
     @_bindEvents()
@@ -18,8 +16,4 @@ class App.Views.MainView
   onClickLoadMore: (event) =>
     self = $(event.currentTarget)
     self.toggleClass('clicked')
-
-    if self.hasClass('clicked')
-      @ui.grid.animate('max-height': '10000px', 300)
-    else
-      @ui.grid.animate('max-height': '1270px', 300)
+    @ui.grid.toggleClass('full')

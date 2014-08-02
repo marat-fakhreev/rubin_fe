@@ -100,12 +100,18 @@
 
 .current-match-information
   margin: 0 0 60px 0
+  position: relative
 
   .match-inner
     overflow: hidden
     min-height: 250px
-    // height: 250px
-    height: auto
+    max-height: 250px
+    transition: max-height 1s ease-in-out
+
+    &.full
+      height: auto
+      max-height: 10000px
+      transition: max-height 1s ease-in-out
 
     .match-information
       width: 100%
@@ -113,6 +119,12 @@
       max-height: 420px
       padding: 40px 10px 0 10px
       margin: 40px 0
+      transition: max-height 1s ease-in-out
+
+      &.full
+        height: auto
+        max-height: 10000px
+        transition: max-height 1s ease-in-out
 
   .match-item
     .current-date
@@ -152,6 +164,7 @@
     position: absolute
     font-size: 75px
     color: $white
+    margin: 5px 0 0 0
 
     &.left-item
       float: left
@@ -314,3 +327,21 @@
           width: 40px
           padding: 0 15px 0 0
           box-sizing: border-box
+
+  .current-match-buttons
+    position: absolute
+    bottom: -35px
+    width: 100%
+
+    .collapse-button
+      margin: 0
+
+    .view-full-coverage-button
+      color: $red
+      position: absolute
+      top: 4px
+      right: 0
+      cursor: pointer
+
+      &:hover
+        color: $green

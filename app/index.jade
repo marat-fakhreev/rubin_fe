@@ -17,6 +17,7 @@ html
     //- app scripts
     script(type='text/javascript', src='/scripts/app.js')
     script(type='text/javascript', src='/scripts/layouts/main.js')
+    script(type='text/javascript', src='/scripts/views/header_view.js')
     script(type='text/javascript', src='/scripts/views/main_view.js')
     script(type='text/javascript', src='/scripts/views/navigation_view.js')
 
@@ -179,11 +180,12 @@ html
                       span.current-date
                         | 10 November 2014
                       span.match-time
-                        | 59
+                        | '59
                 section.match-information
                   .current-match-table-left
                     .table-head
-                      button.button View full coverage
+                      button.button.show-full-coverage
+                        | View full coverage
                     .half
                       .half-head
                         | 2nd half
@@ -343,6 +345,12 @@ html
                           .number 5
                           .surname Marcano
               .green-bottom-line
+            .current-match-buttons
+              .collapse-button.load-more
+                span.default Collapse
+                span.clicked Collapse
+              .view-full-coverage-button.show-full-coverage
+                span View full coverage
 
           div(
             class='fotorama'
