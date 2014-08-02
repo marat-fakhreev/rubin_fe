@@ -4,10 +4,10 @@ html
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description', content='')
-    meta(name="viewport" content="minimum-scale=1.0, maximum-scale=1.0")
+    meta(name='viewport' content='minimum-scale=1.0, maximum-scale=1.0')
     title Rubin
 
-    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
     //- libraries
     script(type='text/javascript', src='/bower_components/jquery/dist/jquery.min.js')
     script(type='text/javascript', src='/bower_components/jquery.easing/js/jquery.easing.min.js')
@@ -37,6 +37,30 @@ html
                 li.tw
                 li.instagram
               .logo
+            .right-container
+              .login-container
+                .buttons
+                  a(href='#' class='register')
+                    | Register |
+                  span.login Login
+              .sign-in-form
+                form(id='sign_in_form')
+                  label Sign In
+                  .inputs-block
+                    input(type='email' class='field')
+                    input(type='password' class='field')
+                  .errors-block
+                    .error.fill-form-error Fill all fields
+                    .error.email-error Forgot username
+                    .error.password-error Forgot password
+                  div(class='button submit-button') Submit
+                .social-block
+                  label Or sign in with
+                  ul
+                    li.vk
+                    li.fb
+                    li.google
+                    li.tw
           nav
             ul
               li News
