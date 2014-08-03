@@ -23,6 +23,7 @@ class App.Views.NavigationView
       countryButton: @$el.find('.country')
       registerContainer: @$el.find('.register-block')
       loginText: @$el.find('.login-text')
+      myRubin: @$el.find('.my-rubin')
 
   _bindEvents: ->
     @ui.navMenuItem.on('click', @onClickNavMenuItem)
@@ -30,6 +31,7 @@ class App.Views.NavigationView
     @ui.submitButton.on('click', @onSubmitSignInForm)
     @ui.login.on('click', @onClickLogin)
     @ui.countryButton.on('click', @onClickCountryButton)
+    @ui.myRubin.on('click', @onClickMyRubin)
     @ui.signInFormContainer.on('click', (event) -> event.stopPropagation())
 
   onClickNavMenuItem: (event) =>
@@ -81,6 +83,10 @@ class App.Views.NavigationView
       else
         @ui.loginText.removeClass('active')
         @ui.registerContainer.removeClass('hidden')
+
+  onClickMyRubin: (event) =>
+    event.stopPropagation()
+    @ui.myRubin.toggleClass('active')
 
   onClickCountryButton: (event) =>
     event.stopPropagation()

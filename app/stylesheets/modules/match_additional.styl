@@ -12,19 +12,20 @@
       background-color: grey
       transform: skewY(-1deg)
       position: relative
-      top: -5px
+      overflow: hidden
+      top: 5px
 
     .match-slider
     .match-information
       width: 100%
-      padding: 40px 0
+      padding: 30px 0
       transform: skewY(1deg)
 
     .green-bottom-line
       imgSprite(green_ui_line_bottom)
       position: absolute
       left: 50%
-      bottom: -7px
+      bottom: -20px
       margin-left: -550px
 
   .match-item
@@ -103,9 +104,8 @@
   position: relative
 
   .match-inner
-    overflow: hidden
-    min-height: 250px
-    max-height: 250px
+    min-height: 240px
+    max-height: 240px
     transition: max-height 1s ease-in-out
 
     &.full
@@ -330,7 +330,7 @@
 
   .current-match-buttons
     position: absolute
-    bottom: -35px
+    bottom: -45px
     width: 100%
 
     .collapse-button
