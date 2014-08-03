@@ -1,5 +1,7 @@
 .header
   padding: 0 15px
+  position: relative
+  z-index: 100
 
   .header-top-part
     clearfix()
@@ -120,3 +122,13 @@
       bottom: -35px
       margin-left: -552px
       z-index: 10
+
+    .green-bottom-line
+      bottom: -35px
+
+  .green-bottom-line
+    imgSprite(green_ui_line_bottom)
+    position: absolute
+    left: 50%
+    bottom: -20px
+    margin-left: -550px

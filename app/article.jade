@@ -1,0 +1,311 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport' content='minimum-scale=0.2, maximum-scale=1.0, initial-scale=0.6')
+    title Rubin
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //- libraries
+    script(type='text/javascript', src='/bower_components/jquery/dist/jquery.min.js')
+    script(type='text/javascript', src='/bower_components/jquery.easing/js/jquery.easing.min.js')
+    script(type='text/javascript', src='/bower_components/fotorama/fotorama.js')
+    script(type='text/javascript', src='/bower_components/jquery/dist/jquery.min.js')
+    script(type='text/javascript', src='/bower_components/underscore/underscore.js')
+    //- app scripts
+    script(type='text/javascript', src='/scripts/app.js')
+    script(type='text/javascript', src='/scripts/layouts/main.js')
+    script(type='text/javascript', src='/scripts/views/header_view.js')
+    script(type='text/javascript', src='/scripts/views/main_view.js')
+    script(type='text/javascript', src='/scripts/views/navigation_view.js')
+
+  body
+    .wrapper
+      .wrapper-inner
+        section.navigation
+          .user-container
+            .left-container
+              .search
+                input(type=text)
+                .search-button
+              ul.social-white
+                li.vk
+                li.fb
+                li.google
+                li.tw
+                li.instagram
+              .logo
+            .right-container
+              //- .profile-container
+              //-   .buttons
+              //-     .my-rubin My Rubin
+              //-   .avatar
+              .login-container
+                .buttons
+                  .register-block
+                    span.country Россия
+                    a(href='#' class='register')
+                      | Register |
+                  span.login-text
+                    | Are you already a member of Rubin?
+                  span.login Login
+              .sign-in-form
+                form(id='sign_in_form')
+                  label Sign In
+                  .inputs-block
+                    input(type='email' class='field' placeholder='user email')
+                    input(type='password' class='field' placeholder='user password')
+                  .errors-block
+                    .error.fill-form-error Fill all fields
+                    .error.email-error Forgot username
+                    .error.password-error Forgot password
+                  div(class='button submit-button') Submit
+                .social-block
+                  label Or sign in with
+                  ul
+                    li.vk
+                    li.fb
+                    li.google
+                    li.tw
+          nav
+            ul
+              li News
+              li Season
+              li Club
+              li Tickets
+              li Shop
+              li Forum
+
+        header.header
+          section.header-top-part
+            .dropdown-menu-container
+              .menu.news
+              .menu.season
+                ul
+                  li.menu-item
+                    a(class='menu-item-link' href='#') Rubin
+                    .menu-item-content
+                      ul
+                        li
+                          a(href='#')
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-slider.jpg)')
+                            | Ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.
+                        li
+                          a(href='#')
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-slider.jpg)')
+                            | Ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.
+                        li
+                          a(href='#')
+                            .image-wrapper
+                              .image(style='background-image: url(../images/for-slider.jpg)')
+                            | Ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.
+                  li.menu-item
+                    a(class='menu-item-link' href='#') Rubin-2
+                    .menu-item-content
+                  li.menu-item
+                    a(class='menu-item-link' href='#') Neftekhimik
+                    .menu-item-content
+                  li.menu-item
+                    a(class='menu-item-link' href='#') Rubin-M
+                    .menu-item-content
+                  li.menu-item
+                    a(class='menu-item-link' href='#') Academy
+                    .menu-item-content
+                  li.menu-item
+                    a(class='menu-item-link' href='#') Kamaz
+                    .menu-item-content
+              .menu.club
+              .menu.tickets
+              .menu.shop
+              .menu.forum
+            .header-container
+              .green-top-line
+              .green-bottom-line
+
+        section.main
+          .grid-container
+            .article-title.team
+              .image(style='background-image: url(../images/for-article-title.jpg)')
+              .text-container
+                .title
+                  | Ultricies nec pellentesque eu pretium quis, sem nulla consequat massa quis enim. Donec pede justo fringilla.
+                .shares
+                  | 41 Shares
+            ul.grid.article-grid
+              li.col-grid.col-article
+                .article-container
+                  .posted
+                    | By <span>John Sampleman.</span> Posted 3 hours ago.
+                  span
+                    | Perspien ducidem ullia sectature pro blabor remqui sunt minctur reptatquos derchil ilibusae rescit pa veliquis dolorep eruptas qui rehendu ntiumet aut eum quia corro magnatur, con pernam harum, odic tecti odit as dendae quam, sam nonesed magnate natam int et, unto con repudip itempor sed quia pro blacesc ipicae vollam invelique et alique voluptatia. nobitataquam aut dit erspernatiur
+                  .text-widget
+                  p
+                    | Ut lanihil itatis dolor aut fuga. Ut et int laut optasperum et aut aut ut pratemod es expera quatur moluptatio et quaesse mi, sit veri omnis ped qui doluptibus ut explab ium qui asimporum quiatur, que di sequi nem ut ilibus et quiat videbit es es anitat mincill animus eri que simporepudi andunt viti assimus. Us il illam atempelese nobist ut aut latur. Bearitatur res enimill esenditem dersper cipsaped mod magnimu sciaect estiisqui sum quam, cuptatu riosseq uisque quatecae natquam quis eturest. vendit quodis intem et moluptas rem simod eic to bla quaeptas doluptate evel eum esendae. Ut lanihil itatis dolor aut fuga. Ut et int laut optasperum et aut aut ut pratemod es expera quatur moluptatio et quaesse mi, sit veri omnis ped qui doluptibus ut explab ium qui asimporum quiatur, que di sequi nem ut ilibus et quiat videbit es es anitat mincill animus eri que simporepudi andunt viti assimus. Us il illam atempelese nobist ut aut latur. Bearitatur res enimill esenditem dersper cipsaped mod magnimu sciaect estiisqui sum quam, cuptatu riosseq uisque quatecae natquam quis eturest. vendit quodis intem et moluptas rem simod eic to bla quaeptas doluptate evel eum esendae. Ut lanihil itatis dolor aut fuga. Ut et int laut optasperum et aut aut ut pratemod es expera quatur moluptatio et quaesse mi, sit veri omnis ped qui doluptibus ut explab ium qui asimporum quiatur, que di sequi nem ut ilibus et quiat videbit es es anitat mincill animus eri que simporepudi andunt viti assimus. Us il illam atempelese nobist ut aut latur. Bearitatur res enimill esenditem dersper cipsaped mod magnimu sciaect estiisqui sum quam, cuptatu riosseq uisque quatecae natquam quis eturest. vendit quodis intem et moluptas rem simod eic to bla quaeptas doluptate evel eum esendae. Ut lanihil itatis dolor aut fuga. Ut et int laut optasperum et aut aut ut pratemod es expera quatur moluptatio et quaesse mi, sit veri omnis ped qui doluptibus ut explab ium qui asimporum quiatur, que di sequi nem ut ilibus et quiat videbit es es anitat mincill animus eri que simporepudi andunt viti assimus. Us il illam atempelese nobist ut aut latur. Bearitatur res enimill esenditem dersper cipsaped mod magnimu sciaect estiisqui sum quam, cuptatu riosseq uisque quatecae natquam quis eturest. vendit quodis intem et moluptas rem simod eic to bla quaeptas doluptate evel eum esendae.
+                  .text-widget
+                  p
+                    | Ut lanihil itatis dolor aut fuga. Ut et int laut optasperum et aut aut ut pratemod es expera quatur moluptatio et quaesse mi, sit veri omnis ped qui doluptibus ut explab ium qui asimporum quiatur, que di sequi nem ut ilibus et quiat videbit es es anitat mincill animus eri que simporepudi andunt viti assimus. Us il illam atempelese nobist ut aut latur. Bearitatur res enimill esenditem dersper cipsaped mod magnimu sciaect estiisqui sum quam, cuptatu riosseq uisque quatecae natquam quis eturest. vendit quodis intem et moluptas rem simod eic to bla quaeptas doluptate evel eum esendae.
+
+                  .comment-container
+                    form
+                      label
+                        | Join the discussion <span>Joe Sampleman</span>
+                      textarea(placeholder='Leave a comment')
+                      div(class='text-remaining')
+                        | Remaining characters <span class='characters-count'>400</span>
+                      div(class='button simple submit-button') Submit
+                    .comments
+                      .title 4 comments
+                      ul
+                        li.comment-item
+                          .user-container
+                            .avatar(style='background-image: url(../images/for-comments-avatar.jpg)')
+                            .user
+                              .name RubinFanTheUltimate
+                              .time 1 day ago
+                          .comment-container
+                            p
+                              | Igenitaquas et as est quunt hariorp orrupta temporibus nem rerro mosti bea voloris sim estibus. Mendam vellabo. Bus siminih illant aut res et la necatur, officiissum nis nis et, option pro que vellantiis vollam rem vitatecto dolorecta.
+                          .plus-minus-button
+                            .plus &plus;
+                            .number 0
+                            .minus &minus;
+                          .reply Reply
+                        li.comment-item.replied
+                          .replies
+                            | Replies (1)
+                          .user-container
+                            .avatar(style='background-image: url(../images/for-comments-avatar.jpg)')
+                            .user
+                              .name RubinFanTheUltimate
+                              .time 1 day ago
+                          .comment-container
+                            p
+                              | Igenitaquas et as est quunt hariorp orrupta temporibus nem rerro mosti bea voloris sim estibus. Mendam vellabo. Bus siminih illant aut res et la necatur, officiissum nis nis et, option pro que vellantiis vollam rem vitatecto dolorecta.
+                          .plus-minus-button
+                            .plus &plus;
+                            .number 0
+                            .minus &minus;
+                          .reply Reply
+                        li.comment-item
+                          .user-container
+                            .avatar(style='background-image: url(../images/for-comments-avatar.jpg)')
+                            .user
+                              .name RubinFanTheUltimate
+                              .time 1 day ago
+                          .comment-container
+                            p
+                              | Igenitaquas et as est quunt hariorp orrupta temporibus nem rerro mosti bea voloris sim estibus. Mendam vellabo. Bus siminih illant aut res et la necatur, officiissum nis nis et, option pro que vellantiis vollam rem vitatecto dolorecta.
+                          .plus-minus-button
+                            .plus &plus;
+                            .number 0
+                            .minus &minus;
+                          .reply Reply
+                        li.comment-item
+                          .user-container
+                            .avatar(style='background-image: url(../images/for-comments-avatar.jpg)')
+                            .user
+                              .name RubinFanTheUltimate
+                              .time 1 day ago
+                          .comment-container
+                            p
+                              | Igenitaquas et as est quunt hariorp orrupta temporibus nem rerro mosti bea voloris sim estibus. Mendam vellabo. Bus siminih illant aut res et la necatur, officiissum nis nis et, option pro que vellantiis vollam rem vitatecto dolorecta.
+                          .plus-minus-button
+                            .plus &plus;
+                            .number 0
+                            .minus &minus;
+                          .reply Reply
+                      .load-more
+                        span.default Load more comments
+                        span.clicked Hide all comments
+
+              li.col-grid.col-additional
+                .rubin-tv-widget.tile.widget
+                  h2 Rubin Tv
+                  a(href='#')
+                    .image-wrapper
+                      .image(style='background-image: url(../images/for-home-trenging.jpg)')
+                    | View more videos
+
+                .score-widget.tile.widget
+                  div(
+                    class='fotorama slider slider-widget'
+                    data-width='225px'
+                    data-height='225px'
+                    data-loop='true'
+                  )
+                    .score-item
+                      .rivals
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/rubin-for-match.png')
+                          span Rubin, Kazan
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/zenit-for-match.png')
+                          span Zenit, St. Petersbugr
+                      .score
+                        | 2 : 0
+                      span.title
+                        | 22 november 2014 <br> Kazan Arena, Kazan
+                    .score-item
+                      .rivals
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/zenit-for-match.png')
+                          span Zenit, St. Petersbugr
+                        .rivals-item
+                          .image-wrapper
+                            img(src='images/rubin-for-match.png')
+                          span Rubin, Kazan
+                      .score
+                        | 1 : 2
+                      span.title
+                        | 31 december 2014 <br> Kazan Arena, Kazan
+
+      footer.footer
+        section.footer-widgets
+          .green-red-line
+          .widgets
+            ul.widgets-container
+              li.widget
+              li.widget
+              li.widget
+              li.widget
+
+        section.footer-sponsors
+          span Sponsors
+          .line.line-one
+            .sponsor.sponsor_ak_bank
+            .sponsor.sponsor_mts
+            .sponsor.sponsor_puma
+            .sponsor.sponsor_sogaz
+            .sponsor.sponsor_taif
+            .sponsor.sponsor_tattelecom
+            .sponsor.sponsor_tgc16
+            .sponsor.sponsor_viatti
+          .line.line-two
+            .sponsor.sponsor_uefa
+            .sponsor.sponsor_eca
+            .sponsor.sponsor_rfs
+            .sponsor.sponsor_fifa
+            .sponsor.sponsor_russain_league
+
+        section.footer-text
+          .copyright
+            © Copyright Rubin Kazan 2014
+          ul.footer-links
+            li
+              a(href='#') Contact us
+            li
+              a(href='#') Terms and Conditions
+            li
+              a(href='#') Privacy Policy
+            li
+              a(href='#') Advertising
+            li
+              a(href='#') Sponsors
+

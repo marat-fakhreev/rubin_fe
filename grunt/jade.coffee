@@ -5,4 +5,5 @@ module.exports = (grunt) ->
       client: false
     files: [
       '<%= grunt.publicDir %>/index.html': ['<%= grunt.appDir %>/index.jade']
+      '<%= grunt.publicDir %>/article.html': ['<%= grunt.appDir %>/article.jade']
     ]

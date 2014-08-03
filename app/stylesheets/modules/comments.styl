@@ -1,0 +1,105 @@
+.comment-container
+  form
+    clearfix()
+
+    label
+      fontTitle()
+      display: inline
+
+      span
+        display: inline
+        color: $red
+
+    textarea
+      height: 100px
+
+    .button
+      float: right
+      width: 125px
+
+    .text-remaining
+      color: $greyTwo
+      float: left
+
+      span
+        font-size: 16px
+        display: inline
+
+  .comments
+    clearfix()
+    margin: 30px 0 0 0
+
+    ul
+      border-top: 3px solid $lightRed
+      box-sizing: border-box
+
+      li.comment-item
+        clearfix()
+        display: block
+        height: auto
+        padding: 10px 0 50px 0
+        box-sizing: border-box
+        border-bottom: 2px solid $lightRed
+        position: relative
+
+        &.replied
+          padding: 0 0 50px 0
+
+        &:hover
+          background-color: rgba($red, 0.1)
+
+        .replies
+          height: 25px
+          line-height: 25px
+          box-sizing: border-box
+          background-color: $black
+          border-bottom: 2px solid $lightRed
+          padding: 0 10px
+          margin: 0 0 10px 0
+          color: $white
+
+        .user-container
+          width: 240px
+          float: left
+          position: relative
+
+        .avatar
+          width: 40px
+          height: 40px
+          background-color: $greyTwo
+          float: left
+          margin: 0 10px 0 0
+
+        .user
+          .name
+            color: $red
+
+          .time
+            color: $greyTwo
+            margin: 3px 0 0 0
+
+        .plus-minus-button
+          position: absolute
+          bottom: 30px
+          left: 0px
+
+        .comment-container
+          clearfix()
+          float: left
+          width: 460px
+
+        p
+          margin: 0
+
+        .reply
+          position: absolute
+          bottom: 30px
+          right: 0px
+          color: $red
+          font-size: 16px
+
+    .load-more
+      margin: 10px 0
+
+      span
+        font-size: 16px

@@ -24,7 +24,7 @@
     content: ''
     display: block
     position: absolute
-    top: 5px
+    top: 0px
     left: -7px
     z-index: 50
 
@@ -50,7 +50,7 @@
     &::before
       imgSprite(ribbon_team)
 
-.home-grid
+.grid-container
   h2
     color: $black
 
@@ -69,6 +69,10 @@
     > li
       float: left
       margin: 0 20px
+
+      &.col-article
+        width: 710px
+        margin: 0
 
       &.col-featured
         width: 345px
@@ -176,7 +180,7 @@
         li
           display: block
           box-sizing: border-box
-          border-bottom: 1px solid $red
+          border-bottom: 1px solid $lightRed
           padding: 15px 0
 
           p
