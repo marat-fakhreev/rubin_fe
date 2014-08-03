@@ -8,6 +8,35 @@
     font-size: 12px
     color: $white
 
+    .register-block
+      float: left
+      display: block
+
+      &.hidden
+        display: none
+
+    .country
+      margin: 0 40px 0 0
+      position: relative
+
+      &::before
+        sprite(arrow_small_red_bottom)
+        content: ''
+        position: absolute
+        right: -14px
+        top: 2px
+
+      &.active
+        &::before
+          sprite(arrow_small_red_top)
+
+    .login-text
+      color: $black
+      display: none
+
+      &.active
+        display: block
+
     span
     a
       float: left
@@ -31,7 +60,7 @@
   zoom: 1
   display: none
 
-  &.visible
+  &.active
     zoom: 1
     opacity: 1
     transition: opacity 0.3s ease-in-out

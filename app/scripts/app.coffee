@@ -5,6 +5,6 @@ App =
 
 $ ->
   $(document).on 'click', (event) ->
-    $('*').removeClass('active')
+    $('*').removeClass('active').removeClass('hidden')
 
   new App.Layouts.Main()

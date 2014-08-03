@@ -20,12 +20,17 @@ class App.Views.NavigationView
       error: @$el.find('.error')
       fillFormError: @$el.find('.fill-form-error')
       login: @$el.find('.login')
+      countryButton: @$el.find('.country')
+      registerContainer: @$el.find('.register-block')
+      loginText: @$el.find('.login-text')
 
   _bindEvents: ->
     @ui.navMenuItem.on('click', @onClickNavMenuItem)
     @ui.secondMenuLink.on('mouseover', @onClickSecondMenuItem)
     @ui.submitButton.on('click', @onSubmitSignInForm)
-    @ui.login.on('click', @onShowSignInForm)
+    @ui.login.on('click', @onClickLogin)
+    @ui.countryButton.on('click', @onClickCountryButton)
+    @ui.signInFormContainer.on('click', (event) -> event.stopPropagation())
 
   onClickNavMenuItem: (event) =>
     event.stopPropagation()
@@ -63,11 +68,23 @@ class App.Views.NavigationView
     else
       @ui.fillFormError.addClass('visible')
 
-  onShowSignInForm: =>
+  onClickLogin: (event) =>
+    event.stopPropagation()
     @_clearAllErrors()
 
     @ui.signInFormContainer.fadeIn 0, =>
-      @ui.signInFormContainer.toggleClass('visible')
+      @ui.signInFormContainer.toggleClass('active')
+
+      if @ui.signInFormContainer.hasClass('active')
+        @ui.loginText.addClass('active')
+        @ui.registerContainer.addClass('hidden')
+      else
+        @ui.loginText.removeClass('active')
+        @ui.registerContainer.removeClass('hidden')
+
+  onClickCountryButton: (event) =>
+    event.stopPropagation()
+    @ui.countryButton.toggleClass('active')
 
   _clearAllErrors: ->
     @ui.error.removeClass('visible')
