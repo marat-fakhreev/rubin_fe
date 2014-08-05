@@ -25,6 +25,10 @@ html
     .wrapper
       .wrapper-inner
         section.navigation
+          .breadcrumbs
+            a(href='#') Home
+            .arrow
+            div News
           .user-container
             .left-container
               .search
@@ -36,7 +40,7 @@ html
                 li.google
                 li.tw
                 li.instagram
-              .logo
+              a(href="/").logo
             .right-container
               .profile-container
                 .buttons
@@ -124,10 +128,6 @@ html
               .menu.forum
             .header-container
               .green-top-line
-              .breadcrumbs
-                a(href='#') Home
-                .arrow
-                div News
               .green-bottom-line
 
         section.main
@@ -211,7 +211,7 @@ html
                     form
                       label
                         | Join the discussion <span>Joe Sampleman</span>
-                      textarea(placeholder='Leave a comment')
+                      textarea(class='comment-text-field' placeholder='Leave a comment')
                       div(class='text-remaining')
                         | Remaining characters <span class='characters-count'>400</span>
                       div(class='button simple submit-button') Submit
@@ -276,7 +276,7 @@ html
                             .number 0
                             .minus &minus;
                           .reply Reply
-                      .load-more
+                      .load-more.load-more-comments
                         span.default Load more comments
                         span.clicked Hide all comments
 
