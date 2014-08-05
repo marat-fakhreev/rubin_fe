@@ -4,7 +4,7 @@
       overflow: inherit
 
 .article-title
-  margin: 20px auto 0
+  margin: 20px auto 10px
   width: 955px
   height: 400px
   position: relative
@@ -89,9 +89,77 @@
     display: block
     margin: 0 0 20px 0
 
-  .text-widget
+  .article-widget-container
     float: right
     width: 225px
-    height: 100px
-    background-color: black
-    margin: 5px 0 25px 45px
+    margin: 0 0 25px 45px
+
+  .description
+    font-size: 12px
+    line-height: 1.4
+    margin: 0
+
+.social-shares
+  margin: 40px 0 0 0
+
+  .shares-count
+    fontBody()
+    color: $greyThree
+
+  ul
+    li
+      cursor: pointer
+      height: 30px
+      position: relative
+      float: left
+      margin: 0 20px 0 0
+
+      .plus-minus-button
+        margin: 8px 0 0 0
+
+      .social-count
+        margin: 7px 0 0 10px
+        padding: 0px 3px
+        min-width: 20px
+        height: 20px
+        float: left
+        background-color: $white
+        border: 1px solid $red
+        box-sizing: border-box
+        text-align: center
+        color: $black
+        font-size: 12px
+        line-height: 20px
+        position: relative
+
+        &::before
+          content: ''
+          position: absolute
+          left: -4px
+          top: 5px
+          width: 6px
+          height: 6px
+          background-color: $white
+          border-left: 1px solid $red
+          border-top: 1px solid $red
+          transform: rotate(-45deg)
+
+      .icon
+        float: left
+
+      .vk
+        margin: 7px 0 0 0
+        imgSprite(icon_red_vk)
+
+      .fb
+        margin: 3px 0 0 0
+        imgSprite(icon_red_fb)
+
+      .google
+        margin: 5px 0 0 0
+        imgSprite(icon_red_google)
+
+      .tw
+        margin: 5px 0 0 0
+        imgSprite(icon_red_tw)
+

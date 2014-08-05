@@ -1,4 +1,7 @@
-.comment-container
+.comments-container
+  margin: 90px 0 0 0
+  clear: both
+
   form
     clearfix()
 
@@ -57,6 +60,15 @@
           padding: 0 10px
           margin: 0 0 10px 0
           color: $white
+          position: relative
+
+          &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: 10px
+            margin-top: -4px
+            imgSprite(arrow_small_white_right)
 
         .user-container
           width: 240px
@@ -92,6 +104,7 @@
           margin: 0
 
         .reply
+          cursor: pointer
           position: absolute
           bottom: 30px
           right: 0px
